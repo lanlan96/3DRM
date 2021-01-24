@@ -22,8 +22,8 @@ OSeg-PointCNN-RN
 │   │   ├── Area_2    
 │   │   └── ...  
 │   ├── split_for_local  
-│   │   ├── train_files_for_area_1.txt     
-│   │   ├── val_files_for_area_1.txt   
+│   │   ├── train_files_for_Area_1.txt     
+│   │   ├── val_files_for_Area_1.txt   
 │   │   └── ...  
 │   ├── proposal05    
 │   ├── data_release     
