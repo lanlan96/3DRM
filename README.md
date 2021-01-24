@@ -2,6 +2,11 @@
 Created by Yuqin Lan, Yao Duan, Yifei Shi, Kai Xu.
 
 ## Introduction
+
+<!-- ![avatar](./example.png#pic_center=250x) -->
+<img align="center" src="./example.png"/>
+
+
 3DRM is a plug-and-ply module which can be applied to different 3D detection frameworks to detect 3D objects more accurately and robustly. We implement two applications on proposal-based methods and vote-based methods: OSegPointCNN (Over-segmentation to generate proposals and PointCNN as backbones) and VoteNet. OSegPointCNN is trained and evaluated on S3DIS dataset, and VoteNet is trained and evaluated on ScanNetV2 and SUN RGB-D dataset. 
 
 ## Usage
