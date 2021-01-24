@@ -1,0 +1,15 @@
+tensorflow-gpu==1.12.0
+tensorflow-tensorboard==0.4.0
+open3d-python==0.7.0.0
+opencv-python==4.4.0.42
+numpy==1.17.0
+h5py==2.9.0
+matplotlib
+plyfile
+requests
+scipy
+svgpathtools
+transforms3d
+sklearn
+multiprocessing
+pickle
