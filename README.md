@@ -1,6 +1,4 @@
 # 3DRM:  Pair-wise Relation Module for 3D Object Detection
-Created by Yuqin Lan, Yao Duan, Yifei Shi, Kai Xu.
-
 
 
 ## Introduction
