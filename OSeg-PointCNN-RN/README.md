@@ -10,7 +10,7 @@ We implement OSeg-PointCNN-RN with Tensorflow 1.12.0, CUDA9.0 and cudnn7.05, ple
     pip install -r requirements.txt
 
 ## Data Preparation  
-Organize the data and directories like this before starting to training and evaluation.
+Organize the data and directories like this before starting to train and evaluate.
 
 ```
 OSeg-PointCNN-RN
