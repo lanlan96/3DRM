@@ -34,7 +34,7 @@ OSeg-PointCNN-RN
 ```    
 
 Please follow the following steps to produce required data and files.
-* Download [S3DIS](https://docs.google.com/forms/d/e/1FAIpQLScDimvNMCGhy_rmBA2gHfDu3naktRm6A8BPwAWWDv-Uhm6Shw/viewform?c=0&w=1) dataset, and save it in data/Stanford3dDataset_v1.2_Aligned_Version/. Transform the annotations to .pts format and save them in data/gt/.
+* Download [S3DIS](https://docs.google.com/forms/d/e/1FAIpQLScDimvNMCGhy_rmBA2gHfDu3naktRm6A8BPwAWWDv-Uhm6Shw/viewform?c=0&w=1) dataset, and save it in data/Stanford3dDataset_v1.2_Aligned_Version/. Transform the annotations of each object(.txt) to .pts format and save them in data/gt/.
 * Follow the over-segmentation method used in [VDRAE](https://github.com/yifeishi/HierarchyLayout/tree/master/prerprocess) to generate proposals. Save them in directory: data/data_release/. We take the node segments as the initial proposals. Use the scipt [save_data_to_local](./preprocess_data/save_data_to_local.py) to save the .pkl files to the directory data/local_data/. Organize the generated proposals according to the areas like the examples.
 * Design a deep nerual network (e.g PointCNN) to select proposals with good objectness (IoU>0.5).
 * Use the python script [cal_proposal_05.py](./preprocess_data/cal_proposal_05.py) to save the context points corresponding to each proposal in data/proposal05. Before starting, remember to down-sample each scene points (e.g open3d.voxel_down_sample) in S3DIS to accelerate the processing speed and change path to your own.
