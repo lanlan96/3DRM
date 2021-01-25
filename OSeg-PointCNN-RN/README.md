@@ -24,7 +24,8 @@ OSeg-PointCNN-RN
 │   │   ├── val_files_for_Area_1.txt   
 │   │   └── ...  
 │   ├── proposal05    
-│   ├── data_release     
+│   ├── data_release
+│   ├── gt     
 │   ├── Stanford3dDataset_v1.2_Aligned_Version      
 ├── models   
 │   │   ├── train   
@@ -33,7 +34,8 @@ OSeg-PointCNN-RN
 ```    
 
 Please follow the following steps to produce required data and files.
-* Download [S3DIS](https://docs.google.com/forms/d/e/1FAIpQLScDimvNMCGhy_rmBA2gHfDu3naktRm6A8BPwAWWDv-Uhm6Shw/viewform?c=0&w=1) dataset, and follow the over-segmentation method used in [VDRAE](https://github.com/yifeishi/HierarchyLayout/tree/master/prerprocess) to generate proposals. Save them in directory: data/local_data/. We take the node segments as the initial proposals. Organize the generated proposals according to the areas like the examples.
+* Download [S3DIS](https://docs.google.com/forms/d/e/1FAIpQLScDimvNMCGhy_rmBA2gHfDu3naktRm6A8BPwAWWDv-Uhm6Shw/viewform?c=0&w=1) dataset, and save it in data/Stanford3dDataset_v1.2_Aligned_Version/. Transform the annotations to .pts format and save them in data/gt/.
+* Follow the over-segmentation method used in [VDRAE](https://github.com/yifeishi/HierarchyLayout/tree/master/prerprocess) to generate proposals. Save them in directory: data/data_release/. We take the node segments as the initial proposals. Use the scipt [save_data_to_local](./preprocess_data/save_data_to_local.py) to save the .pkl files to the directory data/local_data/. Organize the generated proposals according to the areas like the examples.
 * Design a deep nerual network (e.g PointCNN) to select proposals with good objectness (IoU>0.5).
 * Use the python script [cal_proposal_05.py](./preprocess_data/cal_proposal_05.py) to save the context points corresponding to each proposal in data/proposal05. Before starting, remember to down-sample each scene points (e.g open3d.voxel_down_sample) in S3DIS to accelerate the processing speed and change path to your own.
 * use the python script [train_test_split.py](./preprocess_data/train_test_split.py) to generate the train and val filelist txt files for each area, or you can produce them yourself by combining selected proposals in other five areas together as _train_ txt and proposals in the left area as _val_ txt for each area.
