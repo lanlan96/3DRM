@@ -52,7 +52,7 @@ For example, train on Area_1 with batch_size=8:
 ## Evaluate
 Change the path (_args.load_ckpt_ at line 61 in eval.py) for your trained model. Run eval.sh to start training.
     
-    ./eval.sh -a AREA_ID -g $GPU_ID -b $BATCH_SIZE
+    ./eval.sh -a $AREA_ID -g $GPU_ID -b $BATCH_SIZE
 
 For example, evaluate on Area_1 with batch_size=8:
 
