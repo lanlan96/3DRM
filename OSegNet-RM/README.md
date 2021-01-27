@@ -1,11 +1,11 @@
-# OSeg-PointCNN with Relation Module
+# OSegNet with Relation Module
 
 ## Introduction
-This repository is the detection framework OSeg-PointCNN equipped with the relation module code implementation on S3DIS dataset. Note that OSeg-PointCNN is a 3D object detection framework of which performance is relatively lower than the State-of-the-art methods.
+This repository is the detection framework OSegNet equipped with the relation module code implementation on S3DIS dataset. Note that OSegNet is a 3D object detection framework of which performance is relatively lower than the State-of-the-art methods.
 
 ## Installation
 
-We implement OSeg-PointCNN-RN with Tensorflow 1.12.0, CUDA9.0 and cudnn7.05, please follow the following command to install the dependencies:
+We implement OSegNet-RM with Tensorflow 1.12.0, CUDA9.0 and cudnn7.05, please follow the following command to install the dependencies:
 
     pip install -r requirements.txt
 
@@ -13,7 +13,7 @@ We implement OSeg-PointCNN-RN with Tensorflow 1.12.0, CUDA9.0 and cudnn7.05, ple
 Organize the data and directories like this before starting to train and evaluate.
 
 ```
-OSeg-PointCNN-RN
+3DRM
 ├── data  
 │   ├── local_data  
 │   │   ├── Area_1  
@@ -30,7 +30,7 @@ OSeg-PointCNN-RN
 ├── models   
 │   │   ├── train   
 │   │   ├── eval  
-├── OSeg-PointCNN-RN      
+├── OSegNet-RN      
 ```    
 
 Please follow the following steps to produce required data and files.
