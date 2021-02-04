@@ -30,7 +30,7 @@ Organize the data and directories like this before starting to train and evaluat
 ├── models   
 │   │   ├── train   
 │   │   ├── eval  
-├── OSegNet-RN      
+├── OSegNet-RM     
 ```    
 
 Please follow the following steps to produce required data and files.
