@@ -22,7 +22,7 @@ If you find this project or this paper useful for your research, please cite:
 }
 ```
 ## Usage
-3DRM can be widely applicable on different 3D detection frameworks. For further information about our implemention on two frameworks, please refer to the sub-directories: [OSegNet-RM](./OSegNet-RM) and [VoteNet-RM](./VoteNet-RM).
+3DRM can be widely applicable on different popular 3D detection frameworks. For further information about our implemention on two frameworks, please refer to the sub-directories: [OSegNet-RM](./OSegNet-RM) and [VoteNet-RM](./VoteNet-RM).
 
 
 ## Acknowledgemets
